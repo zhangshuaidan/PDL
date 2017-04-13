@@ -1,0 +1,9 @@
+.main-img{
+	margin: 30px auto;
+	display: block;
+}
+.container>p{
+	margin: 20px 0;
+	line-height: 34px;
+    font-size: 16px;
+}

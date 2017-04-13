@@ -1,0 +1,70 @@
+.content-head{
+	margin: 50px 0;
+	text-align: center;
+}
+.gray-line{
+	height: 1px;
+	background-color: #E5E5E5;
+	margin: 20px 0;
+}
+.red-line{
+	height: 4px;
+	background-color: #f96868;
+	width: 75px;
+	margin: 0 auto;
+	margin-top: -22px;
+}
+.content-head>p{
+	text-align: left;
+	margin:20px 0;
+	line-height: 34px;
+
+}
+
+/*主体部分内容*/
+.main-content{
+	margin-bottom: 50px;
+}
+.main-content h4{
+	margin: 10px 0;
+	color: red;
+	font-weight: bold;
+}
+
+.main-content ul {
+	background-color: rgba(236, 236, 236, 0.26);
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	/*height: 511px;*/
+}
+.main-content ul>li:nth-child(1) img{
+	width: 100%;
+}
+.main-content ul>li:nth-child(2){
+	margin: 12px 10px;
+	color: #777777;
+}
+.main-content ul>li:nth-child(3){
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.main-content ul>li:nth-child(4) {
+	margin: 10px;
+    line-height: 29px;
+    font-size: 16px;
+}
+.main-content ul>li:nth-child(5)>a{
+	display: inline-block;
+	padding: 10px 20px; 
+	border: 1px solid rgba(148, 194, 247, 1);
+	margin-left: 10px;
+	background-color: #fff;
+}
+.main-content ul>li:nth-child(5)>a:hover{
+	background-color: rgb(244,259,253);
+}
+
+.fenye-list{
+	text-align: center;
+}

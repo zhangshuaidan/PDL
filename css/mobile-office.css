@@ -1,0 +1,54 @@
+/*移动办公系统主体的内容*/
+.mfs-main>h2,.mfs-main>.red-line{
+	text-align: center;
+}
+.red-line{
+	height: 4px;
+    background-color: #f96868;
+    width: 75px;
+    margin: 0 auto 50px;
+}
+.mfs-main-tittle{
+	margin: 50px 0 20px;
+}
+.first-floor-head{
+	margin-bottom: 50px;
+}
+.first-floor-list{
+	text-align: left;
+	margin-bottom: 10px;
+}
+.first-floor-tittle{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.second{
+	margin: 50px 0;
+}
+.second-line{
+	margin-top: -20px;
+	background-color: #ECECEC;
+    height: 1px;
+    margin-bottom: 20px;
+}
+.second>:last-child {
+	padding: 30px;
+}
+.ul-list {
+	font-size: 16px;
+	padding-left: 50px;
+    text-align: left;
+    line-height: 31px;
+    list-style-type: disc;
+}
+.third,.forth{
+	margin-bottom: 50px;
+}
+
+.advice>p {
+	font-size: 22px;
+	background-color: #FBFBFB;
+	border: 1px solid rgb(243, 243, 243);
+	padding: 33px 60px 33px 60px;
+	text-align: center;
+}

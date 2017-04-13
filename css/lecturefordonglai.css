@@ -1,0 +1,70 @@
+
+/*主题部分的内容*/
+.left-list-1{
+	margin-top: 50px;
+}
+/*.main-box,.row{
+	overflow: hidden;
+}*/
+/*设置Ul的左侧样式*/
+.main-box>.row>.col-md-8>ul li:nth-child(1){
+line-height: 35px;
+font-size: 24px;
+}
+.main-box>.row>.col-md-8>ul li:nth-child(2){
+	height:1px;
+	background-color: #e7e7e7;
+	margin: 20px 0 20px;
+ }
+ .main-box>.row>.col-md-8>ul li:nth-child(4){
+ 	line-height: 50px;
+    color: #777777;
+ }
+ .main-box>.row>.col-md-8>ul li:nth-child(5){
+	font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 10px;
+ }
+ .main-box>.row>.col-md-8>ul li:nth-child(6)>a{
+ 	display: inline-block;
+ 	padding: 10px 25px;
+ 	border: 1px solid rgba(148, 194, 247, 1);
+ }
+  .main-box>.row>.col-md-8
+ ul li:nth-child(6)>a:hover{
+ 	background-color: rgb(244,293,253);
+ }
+ /*设置右侧的样式*/
+ .ul-fr-list{
+ 	margin-top: 50px;
+ }
+  .ul-fr-list a{
+  	color: #000;
+  }
+ .ul-fr-list li:nth-child(1){
+ 	margin: 27px 0;
+ 	font-weight: 500;
+ 	line-height: 1.1;
+	font-size: 18px;
+ } 
+  .ul-fr-list li:nth-child(2){
+  	margin: 20px 0;
+  	background-color: #e7e7e7;
+  	height: 1px;
+  }
+  .ul-fr-list li:nth-child(2n+1){
+  	margin-bottom: 15px;
+   	position: relative;
+   }
+ .ul-fr-list li:nth-child(2n+1)>img{
+ 	width: 30%;
+ }
+  .ul-fr-list li:nth-child(2n+1)>div{
+  	top: 0;
+  	position: absolute;
+  	margin-left: 32%;
+  }
+  /*下方的导航列表*/
+  .mainbox-footer{
+  	margin: 50px 0;
+  }

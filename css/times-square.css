@@ -1,0 +1,131 @@
+.main-con{
+	margin-top: 40px;
+	font-size: 16px;
+	text-align: center;
+}
+.main-con-line{
+	width: 75px;
+	height: 4px;
+	background-color: #f96868;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+/*下方文字*/
+.main-con-note{
+	margin: 20px 0;
+	text-align: left;
+}
+.main-con-note>p{
+	font-size: 16px;
+    line-height: 40px;
+}
+.main-con-note span{
+	font-size: 14px;
+}
+/*下方介绍*/
+.introduce{
+	width: 100%;
+	background: url(../img/shuzi-ditu.jpg);
+	color: #fff;
+	padding: 50px 0;
+	margin: 50px 0;
+}
+
+.introduce-box{
+	width: 5%;
+	vertical-align: middle;
+	display: table-cell;
+	text-align: center;
+}
+.introduce-box>p{
+	color: #ff8089;
+	font-weight: 700;
+	font-size: 30px;
+}
+.introduce-box>p>span{
+	color: #fff;
+    text-align: center;
+	font-size: 14px;
+}
+.floor-show{
+	padding: 50px 50px;
+}
+.floor-intr{
+	margin-bottom: 50px;
+}
+.floor-r{
+    width: 107px;
+    color: #fff;
+    line-height: 104px;
+    font-size: 44px;
+    margin-bottom: 23px;
+    text-align: center;	
+    margin-right: 50px;
+}
+.floor-l{
+	font-size: 15px;
+	height: 160px;
+}
+.floor-l>h4,.floor-l>p,.floor-l>button{
+	margin-top: 10px;
+}
+
+/*地图显示部分*/
+.times-square-map{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+
+/*邮箱开始*/
+.mail{
+	background-color: #f0f0f0;
+    margin: 70px 0px 0px 0px;
+    padding: 27px 0px 20px 0px;
+    text-align: center;
+    font-size: 16px;
+    color: #494949;
+}
+.address{
+	border: 1px solid rgba(195, 195, 195, 1);
+    margin: 24px 0px 0px 0px;
+    width: 34%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0px 14px 0px;
+    font-size: 21px;
+}
+.mail-con>p:last-child{
+	margin: 10px 0;
+}
+.footer-top{
+	background-color: #71bbf0;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px 36px 0px;
+    line-height: 51px;
+    font-size: 20px;
+}
+.footer-top button{
+	padding: 9px 30px;
+
+    font-size: 17px;
+    border-radius: 4px;
+	cursor: pointer;
+	vertical-align: middle;
+	background-color: #e0e0e0;
+	border: 1px solid silver;
+}
+.footer-bottom{
+	background-color: #5098cb;
+    line-height: 59px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+    padding: 30px 0;
+}
+.footer-bottom a{
+	color: #fff;
+}
+.footer-bottom p{
+	height: 30px;
+}
