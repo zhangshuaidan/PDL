@@ -13,8 +13,8 @@
 <body>
 
 	<!-- 顶部定位 -->
-	<div class="note-box clearfix">
-			<div class="note-arrow fl"> <a href=""></a></div>
+	<div class="note-box clearfix" id="note-box">
+			<div class="note-arrow fl" id="note-arrow"> <a href="###" id="ca"></a></div>
 			<div class="note-main fr">
 					<p class="note-p1">胖东来集团声明</p>
 					<p class="note-p2">我们的一切信息均以胖东来官方网站为准</p>
@@ -25,6 +25,26 @@
 					<div class="note-foot"></div>
 			</div>
 		</div>
+	<script>
+		var ca=document.getElementById("ca");
+		var notebox=document.getElementById("note-box");
+		var notearrow=document.getElementById("note-arrow");
+		// var notebox=document.getElementsByClassName('note-box');
+		console.log(notebox);
+		var jishu=0;
+		ca.onclick=function(){
+			jishu++;
+			if(jishu%2==0){
+				notebox.style.right=0+"px";
+				notearrow.style.backgroundPosition="center left"; 
+			}else{
+				notebox.style.right=-170+"px";
+				notearrow.style.backgroundPosition="center right"; 
+
+			}
+			console.log(notebox.style.right);
+		}
+	</script>
 	<!-- 顶部导航 -->
 	<div class="head-nav">
 		<!-- 居中 -->
@@ -310,26 +330,6 @@
   </a>
 </div>
 
-<!-- 	<div class="main-pic">
-		<div class="main-pic-col">
-			<a href="" id="pic1"><img src="img/a-lunbo-19.jpg" ></a>
-			<a href="" id="pic2"><img src="img/a-lunbo-02.jpg" ></a>
-			<a href="" id="pic3"><img src="img/a-lunbo-05.jpg" ></a>
-			<a href="" id="pic4"><img src="img/a-lunbo-06.jpg"></a>
-			<a href="" id="pic5"><img src="img/a-lunbo-08.jpg"></a>
-			<a href="" id="pic6"><img src="img/a-lunbo-18.jpg" ></a>
-			<a href="" id="pic7"><img src="img/a-lunbo-21.jpg" ></a>	
-		</div>
-		<div class="main-pic-control">
-			<a href="#pic1"></a>
-			<a href="#pic2"></a>
-			<a href="#pic3"></a>
-			<a href="#pic4"></a>
-			<a href="#pic5"></a>
-			<a href="#pic6"></a>
-			<a href="#pic7"></a>
-		</div>
-	</div> -->
 	<!-- 大图滚动结束 -->
 	<!-- 搜索部分 -->
 	<div class="search">
@@ -454,8 +454,8 @@
 				<div class="line-yellow"></div>
 				<p class="manage-small-p">执行好每一项制度、每一个标准，用爱分享工作与生活的过程</p>
 				<div class="manage-main clearfix">
-					<div class="huadong">
-					<ul class="clearfix wrapper-list">
+					<div class="huadong" id="huadong">
+					<ul class="clearfix wrapper-list" id="wrapper-list">
 						<li>
 							<a href=""><img src="img/guanli-01.jpg" alt=""></a>
 							<p >东来随笔</p>
@@ -500,6 +500,40 @@
 					</div>
 				</div>
 	</div>
+	<script>	
+	// 对管理项目下的图片实行滑动效果
+	var huadong=document.getElementById('huadong');
+	var ulmange=document.getElementById('wrapper-list');
+	var lis=ulmange.getElementsByTagName('li');
+	// 设置滑动的距离 也就是每个图片的距离
+	var pieceWidth=lis[1].offsetWidth;
+	// 向左滑动
+	function move(){
+		huadong.scrollLeft+=pieceWidth;
+		if(huadong.scrollLeft==2*pieceWidth){
+	 		clearInterval(time);
+	 		 time2=setInterval(mover,1000);
+		}
+		
+	}
+	// 向右滑动
+	function mover(){
+		huadong.scrollLeft-=pieceWidth;
+		if(huadong.scrollLeft==0){
+			clearInterval(time2);
+			 time=setInterval(move,1000);
+		}
+	}
+	 var time,time2;
+	 time=setInterval(move,1000);
+	
+
+	 
+	 
+
+	</script>
+
+
 	<!-- 管理结束 -->
 	<!-- 服务开始 -->
 	<div class="contain-service">

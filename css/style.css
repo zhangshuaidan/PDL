@@ -28,6 +28,7 @@ z-index: 1000;
 	width: 50px;
 	height: 45px;
 	background: url(../img/online_arrow.jpg);
+	background-position: 0 0;
 }
 .note-arrow>a{
 	display:block;
@@ -492,14 +493,7 @@ border: 1px solid rgb(241, 241, 241);
     text-align: center;
 }
 
-/*.manage-main>.huadong>ul{
-width: 2590px;
-}
-.huadong{
-	width: 1900px;
-	height: 440px;
-	overflow-x: scroll;
-}*/
+
 
 .manage-main{
 	width: 100%;
@@ -507,7 +501,7 @@ width: 2590px;
 	height: 500px;
 }
 .huadong{
-	position: absolute;
+/*	position: absolute;*/
 	overflow: hidden;
 }
 .wrapper-list{
@@ -777,8 +771,11 @@ background-color: #c588f9;
     margin-left: auto;
     margin-right: auto;
 }
+.share-list{
+	text-align: center;
+}
 .share-list>li{
-	float: left;
+	display: inline-block;
 	width: 22%;
 	padding: 0 15px;
 }
